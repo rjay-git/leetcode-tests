@@ -1,9 +1,10 @@
-// Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
-class Solution {
+// Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
+// An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+class DuplicateInteger {
     hasDuplicate(nums) {
         return new Set(nums).size !== nums.length;
     }
 }
-const solution = new Solution();
+const duplicateInteger = new DuplicateInteger();
 const nums = [1, 2, 3, 4, 5, 1];
-console.log(solution.hasDuplicate(nums));
+console.log(duplicateInteger.hasDuplicate(nums));
